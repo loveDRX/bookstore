@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.hncj.mapper.Order1Mapper">
+
+    <!-- 开启二级缓存 -->
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="edu.hncj.entity.Order1">
+        <id column="id" property="id" />
+        <result column="total_money" property="totalMoney" />
+        <result column="user_id" property="userId" />
+        <result column="reciver_name" property="reciverName" />
+        <result column="reciver_address" property="reciverAddress" />
+        <result column="reciver_phone" property="reciverPhone" />
+        <result column="create_time" property="createTime" />
+        <result column="state" property="state" />
+    </resultMap>
+
+</mapper>
